@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><decorator:title/></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<decorator:head />
+<body>
+<div class="outer-container">
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="site-branding flex flex-column align-items-center">
+                         <h1 class="site-title" style="text-align:center"><a href="../member/mainForm.me" rel="home">How about Europe?</a></h1>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+
+                        <ul class="flex-lg flex-lg-row justify-content-lg-center align-content-lg-center">
+                            <li class="current-menu-item"><a href="../member/mainForm.me">Home</a></li>
+                            <li><a href="../board/tourForm.jsp">Tour Info</a></li>
+                            <li><a href="../board/restaurantForm.jsp">Restaurant Info</a></li>
+                            <li><a href="../board/etcForm.jsp">Etc Info</a></li>
+                            <li><a href="../board/photoForm.jsp">Photo Spot</a></li>
+                            <li>&nbsp;&nbsp;&nbsp;</li>
+                            <li><a href="../member/mypageForm.me?id=${login}"><c:if test="${!empty sessionScope.login}">${sessionScope.login}님의 마이페이지</c:if></a></li>
+                            <li><a href="../member/logout.me">로그아웃</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </header><!-- .site-header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container hero-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero-content flex justify-content-center align-items-center flex-column">
+                                <img src="images/slider.jpg" alt="">
+                            </div><!-- .hero-content -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="hero-content flex justify-content-center align-items-center flex-column">
+                                <img src="images/slider.jpg" alt="">
+                            </div><!-- .hero-content -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="hero-content flex justify-content-center align-items-center flex-column">
+                                <img src="images/slider.jpg" alt="">
+                            </div><!-- .hero-content -->
+                        </div><!-- .swiper-slide -->
+                    </div><!-- .swiper-wrapper -->
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Add Arrows -->
+                </div><!-- .swiper-container -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .hero-section -->
+
+    <div class="container single-page">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <div class="content-wrap">
+                    <header class="entry-header">
+                        <div class="posted-date">
+                            January 30, 2018
+                        </div><!-- .posted-date -->
+
+                        <h2 class="entry-title">Why I love Winter: A short story</h2>
+
+                        <div class="tags-links">
+                            <a href="#">#winter</a>
+                            <a href="#">#love</a>
+                            <a href="#">#snow</a>
+                            <a href="#">#january</a>
+                        </div><!-- .tags-links -->
+                    </header><!-- .entry-header -->
+
+                    <figure class="featured-image">
+                        <img src="images/1.jpg" alt="">
+                    </figure><!-- .featured-image -->
+                    <footer class="entry-footer flex flex-column flex-lg-row justify-content-between align-content-start align-lg-items-center">
+                       
+                    </footer><!-- .entry-footer -->
+                </div><!-- .content-wrap -->
+
+                <div class="content-wrap">
+                    <header class="entry-header">
+                        <div class="posted-date">
+                            January 30, 2018
+                        </div><!-- .posted-date -->
+
+                        <h2 class="entry-title">Travel tips for nature loversy</h2>
+
+                        <div class="tags-links">
+                            <a href="#">#winter</a>
+                            <a href="#">#love</a>
+                            <a href="#">#snow</a>
+                            <a href="#">#january</a>
+                        </div><!-- .tags-links -->
+                    </header><!-- .entry-header -->
+
+                    <figure class="featured-image">
+                        <img src="images/2.jpg" alt="">
+                    </figure><!-- .featured-image -->
+
+              
+                    </footer><!-- .entry-footer -->
+                </div><!-- .content-wrap -->
+            </div><!-- .col -->    
+
+            <div class="col-12 col-lg-3">
+                <div class="sidebar">
+                    <div class="about-me">
+                        <h2>I’m Amelia Smith</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna.</p>
+                    </div><!-- .about-me -->
+
+                    <div class="recent-posts">
+                        <div class="recent-post-wrap">
+                            <figure>
+                                <img src="images/thumb-1.jpg" alt="">
+                            </figure>
+
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+                                <h3><a href="#">My fall in love story</a></h3>
+                            </header><!-- .entry-header -->
+                        </div><!-- .recent-post-wrap -->
+
+                    </div><!-- .recent-posts -->
+                </div><!-- .sidebar -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .outer-container -->
+
+<footer class="sit-footer">
+    <div class="footer-bar">
+        <div class="outer-container">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div><!-- .footer-copyright -->
+                    </div><!-- .col-xl-4 -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .outer-container -->
+    </div><!-- .footer-bar -->
+</footer><!-- .sit-footer -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
